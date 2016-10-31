@@ -5,17 +5,21 @@ grammar_cjkRuby: true
 ---
 # AWT
 * AWT（Abstract Window Toolkit）抽象窗口工具包库，包含于所有的Java SDK中。
+
 ## 优点
 * 更少的启动事件，响应速度快，占用内存小。
 * 比较稳定。
+
 ## 缺点
 * 组件类型少。AWT组件满足最大公约数原则，也就是说只拥有所有平台上都支持的组件。无法获取表或树等高级组件。
 * 组件特性少。比如按钮不支持图片附着。
 * 没有扩展性。
 * 不支持look and feel。
+
 # Swing
 * Swing的一些底层类是借用了AWT的Component、Container、Window等少数几个基础类。
 * Swing是纯JAVA实现的，而SWT和AWT是Java和JNI的混合。
+
 ## 优点
 * 丰富的组件类型。
 * 丰富的组件特性。
@@ -28,26 +32,27 @@ grammar_cjkRuby: true
    D.使用渲染器和编辑器机制扩展复制的Swing组件，如JList，JComboBox，JTable，JTree等；
    E.基于已有Look And Feel 或从零开始创建新的Look And Feel；
   F.使用LayeredPane，GlassPane或拖放机制开发高级的组件，例如浮动的固定组件，自定义弹出窗口，自定义菜单等。
+  
 ## 缺点
   消耗更多内存，加载速度慢。在运行时装载了大量的类。
+  
 # SWT
 IBM Eclipse开源项目的SWT（Standard Widget Toolkit）标准窗口部件库，不包含于JDK中。
+
 ## 优点
 * 丰富的组件类型。
 *  相对丰富的组件特性。
 *  更快的响应时间。由于SWT组件包装了本地组件，由操作系统实现渲染。
 *  更少的内存消耗。
+
 ## 缺点
 *  非Windows平台下性能不好。
 *  不属于标准类库。
 *  没有look and feel支持。
 *  不能扩展。
+
 # 小结
-ABCD | EFGH | IGKL
------|------|----
-a    | b    | c
-d    | e    | f
-g    | h    | i
+
 
 |类别         |组件类型                   |组件特性                      |
 |:--------------------------:|:---------------------:|:-------------------------:|
