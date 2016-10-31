@@ -13,8 +13,6 @@ grammar_cjkRuby: true
 * 组件特性少。比如按钮不支持图片附着。
 * 没有扩展性。
 * 不支持look and feel。
-
-
 # Swing
 * Swing的一些底层类是借用了AWT的Component、Container、Window等少数几个基础类。
 * Swing是纯JAVA实现的，而SWT和AWT是Java和JNI的混合。
@@ -45,6 +43,12 @@ IBM Eclipse开源项目的SWT（Standard Widget Toolkit）标准窗口部件库�
 *  没有look and feel支持。
 *  不能扩展。
 # 小结
+ABCD | EFGH | IGKL
+-----|------|----
+a    | b    | c
+d    | e    | f
+g    | h    | i
+
 |类别         |组件类型                   |组件特性                      |
 |:--------------------------:|:---------------------:|:-------------------------:|
 |AWT|最大公约数|最大公约数|
